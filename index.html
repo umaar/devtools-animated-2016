@@ -1,0 +1,452 @@
+<!doctype html>
+<html lang="en">
+
+	<head>
+		<meta charset="utf-8">
+		<title>DevTools an Animated Journey 2016</title>
+		<meta name="description" content="Slides for my DevTools talk">
+		<meta name="author" content="Umar Hansa">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css" id="theme">
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+		<link rel="stylesheet" href="css/custom.css">
+	</head>
+
+	<body>
+
+		<div class="reveal">
+
+			<div class="slides">
+
+<!-- Intro slide -->
+
+<section>
+	<h1>DevTools</h1>
+	<h3>An Animated Journey 2016</h3>
+</section>
+
+<!-- About me -->
+<section>
+	<ul>
+		<a target="_blank" href="https://twitter.com/umaar">@umaar</a> - for more tips
+	</ul>
+</section>
+
+<!-- Dev Tips -->
+<section>
+	<h1>Dev Tips</h1>
+	<h5>weekly gif showcasing a developer-friendly tip </h5>
+	<h4>101 tips posted so far!</h4>
+	<p>
+		<a target="_blank" href="https://umaar.com/dev-tips">umaar.com/dev-tips</a>
+	</p>
+</section>
+
+<!-- What we will cover -->
+<section>
+	<h2>What we will cover</h2>
+</section>
+
+<section>
+	<h3>How DevTools can help with:</h3>
+	<ul>
+		<li>Animation</li>
+		<li>JS Debugging</li>
+		<li>Accessibility</li>
+		<li>Smaller bits and pieces</li>
+		<li>A bit of Node.js debugging</li>
+	</ul>
+</section>
+
+<!-- Begin Elements -->
+<section>
+	<h1>Elements</h1>
+	<img src="img/elements/logo.png" alt="">
+</section>
+
+<section data-background-video="vid/elements/inspect-v2.mp4"></section>
+
+<section>
+	<h2>Style modifications</h2>
+	<small>
+		<code>outline: 1px solid red;</code>
+	</small>
+</section>
+
+<section data-background-video="vid/elements/add-style.mp4"></section>
+
+<section>
+	<p>(Side note)</p>
+	<h6>Independent CSS Transform Properties</h6>
+	<img src="img/elements/independant-css-transform.jpg" alt="">
+</section>
+
+
+<section>
+	<h2>Toggle element classes</h2>
+	<h6>One click to remove the "col-1-2" class</h6>
+</section>
+
+<section data-background-video="vid/elements/toggle-element-classes.mp4"></section>
+
+<section>
+	<h2>Layout Editor (WIP)</h2>
+	<h6>Next level layout editing</h6>
+</section>
+
+<section data-background-video="vid/elements/layout-editor.mp4"></section>
+
+<section class="slide-layout-editor">
+	<h3>Layout Editor</h3>
+	<ul>
+		<li><span></span> = Padding</li>
+		<li><span></span> = Margin</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Layout Editor</h3>
+
+	<ul>
+		<li>Hover to see the current margin/padding value</li>
+		<li>Drag to modify</li>
+		<li>Guidelines help with alignment</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Layout Editor Ideas</h3>
+
+	<ul>
+		<li>What if you set up workspaces and your layout changes persisted to disk?</li>
+		<li class="fragment">What if layout editing worked on touch devices?</li>
+		<li class="fragment">What if 'in-page' editing allowed you to control all the CSS for an element?</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Animation</h3>
+	<img src="img/elements/animation.gif" alt="">
+</section>
+
+<section>
+	<h3>Animation Recording</h3>
+</section>
+
+<section data-background-video="vid/elements/animation-recorder.mp4"></section>
+
+<section>
+	<h3>Animation Inspecting</h3>
+</section>
+
+<section data-background-video="vid/elements/animation-inspector.mp4"></section>
+
+<section>
+	<h3>Animation Debugging - 2 parts</h3>
+	<ul>
+		<li>Animation Recorder</li>
+		<li>Animation Inspector</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Recorder (pt 1)</h3>
+	<h6>A timeline view of recorded animations</h6>
+	<p>Hover to preview, discard any animations you don't care about</p>
+</section>
+
+<section>
+	<h3>Recorder (pt 2)</h3>
+	<p>With the animations pane open, <strong>all</strong> animations/transitions are captured.</p>
+</section>
+
+<section>
+	<h3>Inspector</h3>
+	<ul>
+		<li>A breakdown of the animations and animatable properties</li>
+		<li>Click and drag to change animation-delay and animation-duration</li>
+		<li class="fragment">But wait, there's more!</li>
+	</ul>
+</section>
+
+<section>
+	<h3>Web Animation API</h3>
+	<img src="img/elements/web-animation.png" alt="">
+</section>
+
+<section>
+	<p>Access an inspected animation through JavaScript</p>
+</section>
+
+<section data-background-video="vid/elements/web-animation-api.mp4"></section>
+
+<section>
+	<h3>Visual Animation Debugging shines with complex animations</h3>
+</section>
+
+<section data-background="img/elements/animation-inspector.png"></section>
+
+<section>
+	<h3>Keyframe Editing</h3>
+</section>
+
+<section data-background-video="vid/elements/keyframe-editing.mp4"></section>
+
+<section>
+	<h3>Network</h3>
+</section>
+
+<section>
+	<h3>Request Blocking</h3>
+</section>
+
+<section data-background-video="vid/network/request-blocking.mp4"></section>
+
+<section>
+	<h3>Filmstrip</h3>
+</section>
+
+<section data-background-video="vid/network/filmstrip.mp4"></section>
+
+<section>
+	<h3>A short debugging story</h3>
+	<ol>
+		<li>DOM to Event Listeners</li>
+		<li>Live Edit</li>
+		<li>Blackboxing</li>
+	</ol>
+</section>
+
+<section>
+	<h3>1. DOM to Event Listeners</h3>
+	<h5>Debugging from the outside in</h5>
+</section>
+
+<section data-background-video="vid/sources/dom-to-event.mp4"></section>
+
+<section>
+	<h3>2. Live edit</h3>
+	<h5>No page reload necessary</h5>
+</section>
+
+<section data-background-video="vid/sources/live-edit.mp4"></section>
+
+<section>
+	<h3>3. Blackboxing</h3>
+	<h5>Goodbye bundle-c718fec0.min.js</h5>
+</section>
+
+<section data-background-video="vid/sources/blackbox.mp4"></section>
+
+<section data-background="img/sources/blackbox.png"></section>
+
+<section>
+	<ol>
+		<li class="faded">DOM to Event Listeners</li>
+		<li><strong>Live Edit</strong></li>
+		<li class="faded">Blackboxing</li>
+	</ol>
+</section>
+
+<section>
+	<h3>Live Edit</h3>
+	<ul>
+		<li>Raw text changes are injected back into V8</li>
+		<li>Comparisons are made between new.js and old.js</li>
+		<li>V8 compiles the changed JS, and patches old.js with the changes</li>
+	</ul>
+</section>
+
+<section>
+	<h3>JavaScript Source Maps</h3>
+	<small>You even debug ES7</small>
+</section>
+
+<section data-background-video="vid/sources/source-maps.mp4"></section>
+
+<section>
+	<img src="img/sources/source-maps.png" alt="">
+	<p><a target="_blank" href="http://sokra.github.io/source-map-visualization/#base64,KGZ1bmN0aW9uIGUodCxuLHIpe2Z1bmN0aW9uIHMobyx1KXtpZighbltvXSl7aWYoIXRbb10pe3ZhciBhPXR5cGVvZiByZXF1aXJlPT0iZnVuY3Rpb24iJiZyZXF1aXJlO2lmKCF1JiZhKXJldHVybiBhKG8sITApO2lmKGkpcmV0dXJuIGkobywhMCk7dmFyIGY9bmV3IEVycm9yKCJDYW5ub3QgZmluZCBtb2R1bGUgJyIrbysiJyIpO3Rocm93IGYuY29kZT0iTU9EVUxFX05PVF9GT1VORCIsZn12YXIgbD1uW29dPXtleHBvcnRzOnt9fTt0W29dWzBdLmNhbGwobC5leHBvcnRzLGZ1bmN0aW9uKGUpe3ZhciBuPXRbb11bMV1bZV07cmV0dXJuIHMobj9uOmUpfSxsLGwuZXhwb3J0cyxlLHQsbixyKX1yZXR1cm4gbltvXS5leHBvcnRzfXZhciBpPXR5cGVvZiByZXF1aXJlPT0iZnVuY3Rpb24iJiZyZXF1aXJlO2Zvcih2YXIgbz0wO288ci5sZW5ndGg7bysrKXMocltvXSk7cmV0dXJuIHN9KSh7MTpbZnVuY3Rpb24ocmVxdWlyZSxtb2R1bGUsZXhwb3J0cyl7CiJ1c2Ugc3RyaWN0IjsKCnZhciBOdW1iZXJzQVBJID0gZnVuY3Rpb24gTnVtYmVyc0FQSShudW1iZXIpIHsKCXJldHVybiBmZXRjaCgiaHR0cDovL251bWJlcnNhcGkuY29tLyIgKyBudW1iZXIgKyAiL3llYXIiKS50aGVuKGZ1bmN0aW9uIChyZXNwb25zZSkgewoJCXJldHVybiByZXNwb25zZS50ZXh0KCk7Cgl9KTsKfTsKCmZ1bmN0aW9uIGluaXQoKSB7Cgl2YXIgcmVzdWx0OwoJcmV0dXJuIHJlZ2VuZXJhdG9yUnVudGltZS5hc3luYyhmdW5jdGlvbiBpbml0JChjb250ZXh0JDEkMCkgewoJCXdoaWxlICgxKSBzd2l0Y2ggKGNvbnRleHQkMSQwLnByZXYgPSBjb250ZXh0JDEkMC5uZXh0KSB7CgkJCWNhc2UgMDoKCQkJCWNvbnRleHQkMSQwLm5leHQgPSAyOwoJCQkJcmV0dXJuIHJlZ2VuZXJhdG9yUnVudGltZS5hd3JhcChOdW1iZXJzQVBJKDEwMDApKTsKCgkJCWNhc2UgMjoKCQkJCXJlc3VsdCA9IGNvbnRleHQkMSQwLnNlbnQ7CgoJCQkJY29uc29sZS5sb2cocmVzdWx0KTsKCgkJCWNhc2UgNDoKCQkJY2FzZSAiZW5kIjoKCQkJCXJldHVybiBjb250ZXh0JDEkMC5zdG9wKCk7CgkJfQoJfSwgbnVsbCwgdGhpcyk7Cn0KCmluaXQoKTsKCn0se31dfSx7fSxbMV0pCi8vIyBzb3VyY2VNYXBwaW5nVVJMPWJ1bmRsZS5qcy5tYXAK,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIm5vZGVfbW9kdWxlcy9icm93c2VyLXBhY2svX3ByZWx1ZGUuanMiLCJhcHAuanMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7OztBQ0FBLElBQUksVUFBVSxHQUFHLFNBQWIsVUFBVSxDQUFHLE1BQU07UUFDdEIsS0FBSyw0QkFBMEIsTUFBTSxXQUFRLENBQzVDLElBQUksQ0FBQyxVQUFBLFFBQVE7U0FBSSxRQUFRLENBQUMsSUFBSSxFQUFFO0VBQUEsQ0FBQztDQUFBLENBQUM7O0FBRXBDLFNBQWUsSUFBSTtLQUNkLE1BQU07Ozs7O29DQUFTLFVBQVUsQ0FBQyxJQUFJLENBQUM7OztBQUEvQixVQUFNOztBQUNWLFdBQU8sQ0FBQyxHQUFHLENBQUMsTUFBTSxDQUFDLENBQUM7Ozs7Ozs7Q0FDcEI7O0FBRUQsSUFBSSxFQUFFLENBQUEiLCJmaWxlIjoiZ2VuZXJhdGVkLmpzIiwic291cmNlUm9vdCI6IiIsInNvdXJjZXNDb250ZW50IjpbIihmdW5jdGlvbiBlKHQsbixyKXtmdW5jdGlvbiBzKG8sdSl7aWYoIW5bb10pe2lmKCF0W29dKXt2YXIgYT10eXBlb2YgcmVxdWlyZT09XCJmdW5jdGlvblwiJiZyZXF1aXJlO2lmKCF1JiZhKXJldHVybiBhKG8sITApO2lmKGkpcmV0dXJuIGkobywhMCk7dmFyIGY9bmV3IEVycm9yKFwiQ2Fubm90IGZpbmQgbW9kdWxlICdcIitvK1wiJ1wiKTt0aHJvdyBmLmNvZGU9XCJNT0RVTEVfTk9UX0ZPVU5EXCIsZn12YXIgbD1uW29dPXtleHBvcnRzOnt9fTt0W29dWzBdLmNhbGwobC5leHBvcnRzLGZ1bmN0aW9uKGUpe3ZhciBuPXRbb11bMV1bZV07cmV0dXJuIHMobj9uOmUpfSxsLGwuZXhwb3J0cyxlLHQsbixyKX1yZXR1cm4gbltvXS5leHBvcnRzfXZhciBpPXR5cGVvZiByZXF1aXJlPT1cImZ1bmN0aW9uXCImJnJlcXVpcmU7Zm9yKHZhciBvPTA7bzxyLmxlbmd0aDtvKyspcyhyW29dKTtyZXR1cm4gc30pIiwibGV0IE51bWJlcnNBUEkgPSBudW1iZXIgPT5cblx0ZmV0Y2goYGh0dHA6Ly9udW1iZXJzYXBpLmNvbS8ke251bWJlcn0veWVhcmApXG5cdC50aGVuKHJlc3BvbnNlID0+IHJlc3BvbnNlLnRleHQoKSk7XG5cbmFzeW5jIGZ1bmN0aW9uIGluaXQoKSB7XG5cdGxldCByZXN1bHQgPSBhd2FpdCBOdW1iZXJzQVBJKDEwMDApO1xuXHRjb25zb2xlLmxvZyhyZXN1bHQpO1xufVxuXG5pbml0KCkiXX0=,KGZ1bmN0aW9uIGUodCxuLHIpe2Z1bmN0aW9uIHMobyx1KXtpZighbltvXSl7aWYoIXRbb10pe3ZhciBhPXR5cGVvZiByZXF1aXJlPT0iZnVuY3Rpb24iJiZyZXF1aXJlO2lmKCF1JiZhKXJldHVybiBhKG8sITApO2lmKGkpcmV0dXJuIGkobywhMCk7dmFyIGY9bmV3IEVycm9yKCJDYW5ub3QgZmluZCBtb2R1bGUgJyIrbysiJyIpO3Rocm93IGYuY29kZT0iTU9EVUxFX05PVF9GT1VORCIsZn12YXIgbD1uW29dPXtleHBvcnRzOnt9fTt0W29dWzBdLmNhbGwobC5leHBvcnRzLGZ1bmN0aW9uKGUpe3ZhciBuPXRbb11bMV1bZV07cmV0dXJuIHMobj9uOmUpfSxsLGwuZXhwb3J0cyxlLHQsbixyKX1yZXR1cm4gbltvXS5leHBvcnRzfXZhciBpPXR5cGVvZiByZXF1aXJlPT0iZnVuY3Rpb24iJiZyZXF1aXJlO2Zvcih2YXIgbz0wO288ci5sZW5ndGg7bysrKXMocltvXSk7cmV0dXJuIHN9KQ==,bGV0IE51bWJlcnNBUEkgPSBudW1iZXIgPT4KCWZldGNoKGBodHRwOi8vbnVtYmVyc2FwaS5jb20vJHtudW1iZXJ9L3llYXJgKQoJLnRoZW4ocmVzcG9uc2UgPT4gcmVzcG9uc2UudGV4dCgpKTsKCmFzeW5jIGZ1bmN0aW9uIGluaXQoKSB7CglsZXQgcmVzdWx0ID0gYXdhaXQgTnVtYmVyc0FQSSgxMDAwKTsKCWNvbnNvbGUubG9nKHJlc3VsdCk7Cn0KCmluaXQoKQ==">Source Map Example</a></p>
+</section>
+
+<section>
+	<h3>Service Workers</h3>
+</section>
+
+<section data-background-video="vid/resources/service-workers.mp4"></section>
+
+<section>
+	<h3>Themes</h3>
+	<small>Dark mode</small>
+</section>
+
+<section data-background-video="vid/settings/dark-theme.mp4"></section>
+
+<section>
+	<h3>Promise Inspector</h3>
+</section>
+
+<section data-background-video="vid/promise/promise-inspector.mp4"></section>
+
+<section>
+	<p>Captures all promises in various states</p>
+</section>
+
+<section>
+	<h2>Pending</h2>
+	<pre><code class="hljs" data-trim contenteditable>
+new Promise(() => {})
+	</code></pre>
+</section>
+
+<section>
+	<h2>Fulfilled</h2>
+	<pre><code class="hljs" data-trim contenteditable>
+new Promise(resolve => resolve())
+	</code></pre>
+</section>
+
+<section>
+	<h2>Rejected</h2>
+	<pre><code class="hljs" data-trim contenteditable>
+new Promise((resolve, reject) => reject())
+	</code></pre>
+</section>
+
+<section>
+	<h3>Security Panel</h3>
+	<img src="img/security/logo.png" alt="">
+</section>
+
+<section data-background-video="vid/security/security-panel.mp4"></section>
+
+<section>
+	<h3>Accessibility</h3>
+	<p><a href="https://chrome.google.com/webstore/detail/accessibility-developer-t/fpkknkljclfencbdbgkenhalefipecmb?hl=en">Accessibility Developer Tools </a>for Chrome</p>
+	<img src="img/a11y/logo.png" alt="a11y logo">
+</section>
+
+<section data-background-video="vid/a11y/extension.mp4"></section>
+
+<section data-background="img/a11y/extension.png"></section>
+<section data-background="img/a11y/extension-settings.png"></section>
+<section data-background="img/a11y/pane.png"></section>
+
+<section>
+	<h3>Contrast line ratio</h3>
+	<p class="faded">Contrast is important</p>
+</section>
+
+<section data-background-video="vid/a11y/colour-contrast.mp4"></section>
+
+<section>
+	<p>The threshold between low contrast and an acceptable contrast. </p>
+</section>
+
+
+<section class="slide-command-menu">
+	<h3>Command Menu</h3>
+	<p>Access to everything in a few keystrokes</p>
+	<img src="img/command/logo.png" alt="">
+</section>
+
+<section data-background-video="vid/command/command-menu.mp4"></section>
+
+<section>
+	<h2>Some other smaller bits</h2>
+</section>
+
+<section data-background="img/elements/custom-properties.png"></section>
+
+<section data-background="img/elements/element-toolbar.png"></section>
+
+<section data-background="img/elements/colour-palette.png"></section>
+
+<section data-background="img/elements/colour-palette-material.png"></section>
+
+<section data-background-video="vid/elements/colour-palette-shades.mp4"></section>
+
+<section data-background="img/console/autocomplete.png"></section>
+
+<section data-background="img/console/handled-filter.png"></section>
+
+<section data-background="img/console/frame-auto-select.png"></section>
+
+<section>
+	<img src="img/network/throttle-upload-download.png" alt="">
+</section>
+
+<section data-background="img/sources/threads.png"></section>
+
+<section data-background="img/timeline/cpu-throttling.png"></section>
+
+<section data-background-video="vid/sources/line-level-profiling.mp4"></section>
+
+<section>
+	<h3>What about Node.js?</h3>
+	<small>glad you asked</small>
+</section>
+
+<section data-background="img/node/iron-node.png"></section>
+
+<section data-background="img/node/node-inspector.png"></section>
+
+<section data-background-video="vid/node/node-inspector.mp4"></section>
+
+<section>
+	<h3>Recap</h3>
+</section>
+
+<section>
+	<ul>
+		<li>Animation tooling</li>
+		<li>Accessibility (with extension + native experiments)</li>
+		<li>Use Source Maps with JS + Sass - set up "Workspaces" for save-to-file abilities</li>
+		<li>Filmstrip + Request Blocking - how does the user experience a page</li>
+		<li>Node.js debugging</li>
+	</ul>
+</section>
+
+<section>
+	<h3>That's all for now</h3>
+</section>
+
+<section>
+	<h5>Thank you</h5>
+	<p><a href="https://umaar.com/dev-tips/">umaar.com/dev-tips</a></p>
+	<p><a href="http://twitter.com/umaar">twitter.com/umaar</a></p>
+</section>
+
+			</div> <!-- .slides -->
+
+		</div><!-- .reveal -->
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				slideNumber: true,
+
+				transition: 'fade',
+
+				dependencies: [
+					{ src: 'lib/js/classList.js', condition: function() { return !document.body.classList; } },
+					{ src: 'plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'plugin/zoom-js/zoom.js', async: true },
+					{ src: 'plugin/notes/notes.js', async: true }
+				]
+			});
+
+		</script>
+	</body>
+</html>
